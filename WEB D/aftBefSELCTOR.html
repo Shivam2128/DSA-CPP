@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo after and before</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+        }
+        header::before{
+            
+            background: url('https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YW5pbWV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60')no-repeat center center/cover;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            content: '';
+            z-index: -1;
+            opacity: 0.2;
+        }
+        .oro{
+            display: flex;
+            font-size: 20px;
+            font-family: 'Unbounded', cursive;
+            cursor: pointer;
+        }
+        .oro :hover{
+            text-decoration:underline;
+            color: hotpink;
+        }
+        li{
+            list-style: none;
+            padding: 34px 23px;
+            text-shadow: 2px 2px 1px blue;
+            
+        }
+        /* section::before{
+            content: "hello itach";
+        } */
+        
+        section{
+            display: flex;
+            flex-direction: column;
+            margin: 3px 23px;
+            align-items: center;
+            height: 344px;
+            justify-content: center;
+        }
+        h2{
+            font-size: 4rem;
+            color: rgb(235, 126, 193);
+        }
+        p{
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="oro">
+                <li class="item">Home</li>
+                <li class="item">About us</li>
+                <li class="item">services</li>
+                <li class="item">contact us</li>
+            </ul>
+        </nav>
+        
+    </header>
+        <section>
+            <h2>Welcome to my coding class.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet error, rerum ipsa sint aut ratione modi voluptatum accusamus enim minus! Accusantium non laborum hic quaerat atque, eum, nihil rerum fugiat dolorem cumque voluptatum vitae vel aspernatur laboriosam eveniet sint quo?</p>
+        </section>
+        <hr>
+    
+</body>
+</html>

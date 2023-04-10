@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        html body{
+            background-color: cyan;
+        }
+        
+        #box{
+            display: flex;
+            width: 200px;
+            height: 200px;
+            background-color: yellowgreen;
+            align-items: center;
+            justify-content: center;
+            /* transition-property: background-color;
+            transition-duration: 6s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 2s; */
+            /* transition: background-color 6s ase-in-out 2s; */
+            transition: all 3s ease-in-out 2s;
+
+        }
+        #box:hover{
+            background-color: hotpink;
+            height: 400px;
+            width: 300px;
+            border-radius: 25px;
+
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <h3>hello my name is shivam kumar biswas.</h3>
+    <div class="container">
+        <div id="box">
+         This is my box.
+        </div>
+    </div>
+</body>
+</html>
