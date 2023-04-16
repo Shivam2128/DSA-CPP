@@ -15,6 +15,7 @@ int main(){
   cout<<(19<<2)<<endl;
 }
 
+
 a&b4
 a|b6
 ~a-5
