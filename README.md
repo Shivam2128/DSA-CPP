@@ -1,3 +1,2 @@
 # PROGRAMMING
-LEARN program
-
+LEARN program with me
